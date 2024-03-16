@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Coolvetica";
+  src:
+    local("Coolvetica Bold"),
+    local("Coolvetica-Bold"),
+    url("CoolveticaRg-Bold.woff2") format("woff2"),
+    url("CoolveticaRg-Bold.woff") format("woff"),
+    url("CoolveticaRg-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

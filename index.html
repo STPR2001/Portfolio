@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <link rel="stylesheet" href="./fonts/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-Nms3owRvqyMTrJwCkbcUaMngjGu9gCFaCw6DhLo27UrR2+38/ZqyLp4PKZvcEQ5VZbJmJKbcn0cKfFmPXOTr4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Santiago Perron</title>
+  </head>
+  <body class="bg-slate-100">
+    <header class="shadow px-6">
+      <div class="flex justify-between h-16 items-center max-w-6xl mx-auto">
+        <button
+          class="-ml-4 text-white hover:text-black hover:bg-yellow-600 rounded p-1 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <div class="flex -mr-4 items-center">
+          <a href="#" class="text-yellow-600 hover:rotate-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+</svg>
+
+          </a>
+          <div class="headerDesktop space-x-8 ml-8 hidden md:flex">
+            <a href="#" class="px-3 py-2 text-yellow-600">Home</a>
+            <a
+              href="#project"
+              class="text-white px-3 py-2 hover:text-yellow-600 transition-colors"
+              >Projects</a
+            >
+            <a
+              href="#"
+              class="text-white px-3 py-2 hover:text-yellow-600 transition-colors"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-white px-3 py-2 hover:text-yellow-600 transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <div class="flex">
+          <button
+            class="mr-4 text-white hover:text-black hover:bg-yellow-600 rounded-full p-1 -ml-1 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
+          </button>
+          <button
+            class="text-white hover:text-black hover:bg-yellow-600 rounded p-1 -ml-1 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="hidden space-y-1 pb-3 border-t pt-2 md:hidden">
+        <a href="#" class="bg-sky-500 text-white block px-3 py-2 rounded-md"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-yellow-600 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
+          >Projects</a
+        >
+        <a
+          href="#"
+          class="text-slate-700 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
+          >About</a
+        >
+        <a
+          href="#"
+          class="text-slate-700 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
+          >Contact</a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="video-container">
+        <video autoplay muted loop id="video-background">
+          <source src="./media/backrounfVideo2.mp4" type="video/mp4" />
+          <!-- Otros formatos de video si son necesarios para una mejor compatibilidad -->
+        </video>
+        <div class="overlay"></div>
+      </div>
+
+      <div class="banner">
+        <h1>Santiago Perron</h1>
+        <h2>Full Stack Developer<span class="point">.</span></h2>
+        <p>
+          I possess the ability to develop and create intricate web
+          applications, employing various technology combinations. My work ethic
+          is characterized by enthusiasm and a keen eagerness to expand my
+          knowledge base.
+        </p>
+      </div>
+      <div class="projects" id="project">
+        <div class="">
+          <div class="prjectsTitle flex items-center">
+            <p class="text-yellow-600 mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+            </svg>
+          </p>
+            <h3>Some projects</h3>
+          </div>
+
+           <div class="container">
+        <div class="buttons">
+            <button onclick="filterProjects('landing')">Landing Pages</button>
+            <button onclick="filterProjects('ecommerce')">Ecommerce</button>
+            <button onclick="filterProjects('personal')">Personal Projects</button>
+            <button onclick="filterProjects('university')">University</button>
+        </div>
+        <div class="projects" id="projects">
+            <!-- Aquí se mostrarán los proyectos filtrados -->
+        </div>
+    </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
